@@ -1,4 +1,5 @@
-package ArchivosPregunta2.Fase2.Pruebas;
+package ArchivosPregunta2.Fase2.Produccion;
+
 import ArchivosPregunta2.Fase2.Produccion.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
