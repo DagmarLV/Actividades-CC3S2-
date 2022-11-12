@@ -17,6 +17,7 @@ public class AirportTest {
         private Flight economyFlight;
 
         @BeforeEach
+        //ahora usamos instancias de EconomyFlight para cada prueba de un vuelo económico
         void setUp() {
             economyFlight = new EconomyFlight("1");
         }
@@ -55,6 +56,7 @@ public class AirportTest {
         private Flight businessFlight;
 
         @BeforeEach
+        //ahora usamos instancias de BusinessFlight para cada prueba de un vuelo de negocios
         void setUp() {
             businessFlight = new BusinessFlight("2");
         }
