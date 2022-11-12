@@ -22,11 +22,11 @@ class InvoiceTestInicial {
         Invoice invoice = new InvoiceBuilder()
                           .asCompany()
                           .withCountry("NL")
-                          .withAValueOf(2500.0)
+                          .withAValueOf(2500)
                           .build();
         double calculatedValue = invoice.calculate();
 
-        assertThat(calculatedValue).isEqualTo(250.0); // 2500 * 0.1 = 250
+        assertThat(calculatedValue).isEqualTo(250); // 2500 * 0.1 = 250
     }
 
 
