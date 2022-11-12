@@ -29,5 +29,20 @@ class InvoiceTestInicial {
         assertThat(calculatedValue).isEqualTo(250); // 2500 * 0.1 = 250
     }
 
+    @Test
+    void taxesForCompanyAreTaxRateMultipliedByAmount() {
+        double invoiceValue = 2500.0;
+        double tax = 0.1;
+        Invoice invoice = new InvoiceBuilder()
+                .asCompany()
+                .withCountry("NL")
+                .withAValueOf(invoiceValue)
+                .build();
+        double calculatedValue = invoice.calculate();
+        assertThat(calculatedValue)
+                .isEqualTo(invoiceValue * tax);
+    }
+
+
 
 }
