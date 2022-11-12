@@ -48,7 +48,7 @@ public class AirportTest {
                 );
             }
 
-            @RepeatedTest(3)
+            @RepeatedTest(3)//Podemos hacer uso de una prueba repetida
             @DisplayName("Entonces este no puede ser añadido más de una vez")
 
             public void testEconomyFlightRegularPassengerAddOnlyOnce(RepetitionInfo repetitionInfo) {
@@ -57,10 +57,10 @@ public class AirportTest {
                 }
 
                 assertAll("Verifica las condiciones para agregar solamente una vez un pasajero regular a un vuelo economico",
-                        () -> assertEquals("1", economyFlight.getId()),
-                        () -> assertEquals(1, economyFlight.getPassengersSet().size()),
-                        () -> assertTrue(economyFlight.getPassengersSet().contains(jessica)),
-                        () -> assertTrue(new ArrayList<>(economyFlight.getPassengersSet())
+                        () -> assertEquals("1", economyFlight.getId()),//verificamos que es el vuelo economico
+                        () -> assertEquals(1, economyFlight.getPassengersSet().size()),//vemos que el tamaño sea solo 1
+                        () -> assertTrue(economyFlight.getPassengersSet().contains(jessica)),//que el set contenga a jessica
+                        () -> assertTrue(new ArrayList<>(economyFlight.getPassengersSet()) //que el nombre corresponda a Jessica
                                 .get(0).getName().equals("Jessica"))
                 );
             }
