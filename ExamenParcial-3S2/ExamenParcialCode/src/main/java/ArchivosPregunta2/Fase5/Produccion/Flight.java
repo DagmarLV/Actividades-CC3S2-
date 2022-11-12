@@ -13,7 +13,8 @@ public abstract class Flight {
     public String getId() {
         return id;
     }
-
+    //inicialmente se encuentra como getPassengerList, se cambia a set para solo añadir uno y esto
+    //tiene que ser reflejado también en las pruebas
     public Set<Passenger> getPassengersSet() {
         return Collections.unmodifiableSet(passengers);
     }
