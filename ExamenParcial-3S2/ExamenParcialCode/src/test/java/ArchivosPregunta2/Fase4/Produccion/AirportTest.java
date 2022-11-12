@@ -1,5 +1,4 @@
-/*package ArchivosPregunta2.Fase4.Pruebas;
-import ArchivosPregunta2.Fase4.Produccion.*;
+package ArchivosPregunta2.Fase4.Produccion;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
@@ -62,6 +61,7 @@ public class AirportTest {
         }
     }
 
+
     @DisplayName("Dado que hay un vuelo de negocios")
     @Nested
     class BusinessFlightTest {
@@ -109,6 +109,5 @@ public class AirportTest {
         }
     }
 
-// Completa la prueba para PremiumFlight de acuerdo a la logica comercial dada. Pregunta 8
-
-*/
+    // Completa la prueba para PremiumFlight de acuerdo a la logica comercial dada. Pregunta 8
+}
