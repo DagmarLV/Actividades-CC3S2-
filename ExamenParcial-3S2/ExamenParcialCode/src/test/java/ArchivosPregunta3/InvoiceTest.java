@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;
 import static org.assertj.core.api.Assertions.*;
 
-class InvoiceTestInicial {
+class InvoiceTest {
     @Test
     void test1() {
         Invoice invoice = new Invoice(new BigDecimal("2500").doubleValue(),"NL",
