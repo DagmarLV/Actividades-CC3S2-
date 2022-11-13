@@ -8,17 +8,17 @@ public class PremiumFlight extends Flight {
     // Diseño de la lógica comercial para los pasajeros VIP.Pregunta 9
     @Override
     public boolean addPassenger(Passenger passenger) {
-        if(passenger.isVip()){
+        if(passenger.isVip()){//solo si es vip se podrá agregar
            return passengers.add(passenger);
         }
-        return false;
+        return false;//en caso contrario no
     }
     @Override
     public boolean removePassenger(Passenger passenger) {
-        if(passenger.isVip()){
+        if(passenger.isVip()){//solo si es vip se podrá eliminar
             return passengers.remove(passenger);
         }
-        return false;
+        return false;//en caso contrario no
     }
 
 }
