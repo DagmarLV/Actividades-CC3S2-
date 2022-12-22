@@ -52,12 +52,40 @@ Primero creamos los directorios necesarios para la pregunta
 
 `dagmar@LAPTOP-M3SQF64H:~/PC4$ cd Pregunta3`
 
-`dagmar@LAPTOP-M3SQF64H:~/PC4/Pregunta3$ mkdir microservices-demo`
-
 Ahora procedemos a descargar el ejemplo proporcionado por https://github.com/ewolff/microservice en el directorio ~/PC4/Pregunta3, ejecutando el comando `git clone` que descargará el ejemplo en nuestro sistema, creando un nuevo directorio llamado *service* donde estarán todos los archivos del ejemplo.
 
-`dagmar@LAPTOP-M3SQF64H:~/PC4/Pregunta3$ git clone https://github.com/ewolff/microservice.git`
+`git clone https://github.com/ewolff/microservice.git`
+
+<p></p>
+
+[![1.jpg](https://i.postimg.cc/dtWfszdW/1.jpg)](https://postimg.cc/QHTmSYf5)
+
+Ahora instalaremos maven utilizando el comando `wget` para descargar el archivo ZIP de Maven en nuestro sistema:
+
+`wget https://downloads.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.zip`
+
+[![2.jpg](https://i.postimg.cc/TwWYRVpw/2.jpg)](https://postimg.cc/Kkxyfg7S)
+
+Este comando descarga el archivo zip en nuestro directorio actual, ahora tendríamos que descomprimir el archivo con el comando
+
+`sudo unzip apache-maven-3.8.6-bin.zip -d /opt`
+
+el cual descomprimirá y creará un nuevo directorio llamado apache-maven-3.8.6 con los archivos de Maven  en la direccion /opt
+
+[![3.jpg](https://i.postimg.cc/9M11Q7S6/3.jpg)](https://postimg.cc/0MM7tb9n)
+
+Ahora tenemos que agregar la ruta del binario de Maven a la variable de entorno PATH, para esto utilizamos el comando `export`, así podremos ejecutar el comando "mvn" desde cualquier directorio en tu sistema sin tener que especificar la ruta completa de Maven, posterior a ello verificaremos que Maven esté instalado correctamente ejecutando el comando mvn -v. Esto debería mostrar la información de la versión de Maven instalada y la ruta de instalación
+
+`export PATH=/opt/apache-maven-3.8.6/bin:$PATH`
+
+`mvn -v`
+
+[![4.jpg](https://i.postimg.cc/5yYvWQMq/4.jpg)](https://postimg.cc/5QJjw0y6)
+
+Ahora compilaremos el proyecto: En el subdirectorio "microservices-demo", ejecutaremos el comando `mvn package`, esto construirá el proyecto completo utilizando Maven, que descargará las dependencias necesarias y compilará el código fuente en un archivo JAR ejecutable.
 
 
-![Descripción de la imagen](/img/1.jpg)
+
+
+
 
