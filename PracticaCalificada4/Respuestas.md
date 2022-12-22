@@ -2,11 +2,11 @@
 ## Pregunta 1
 
 ## Pregunta 2
-<div style="text-align: justify; font-weight: bold; "> En un sistema basado en microservicios puede haber diferentes tipos de comunicación; sin embargo, debe haber un tipo de comunicación predominante.¿Cuál escogerías?¿Qué otros están permitidos además?¿En qué situaciones? ¿Utilizarías la replicación de datos en un sistema basado en microservicios?¿En qué áreas?¿Cómo lo implementarías?</div>
+<div style="text-align: justify; font-weight: bold; "> En un sistema basado en microservicios puede haber diferentes tipos de comunicación; sin embargo, debe haber un tipo de comunicación predominante. ¿Cuál escogerías?¿Qué otros están permitidos además?¿En qué situaciones? ¿Utilizarías la replicación de datos en un sistema basado en microservicios?¿En qué áreas?¿Cómo lo implementarías?</div>
 <p></p>
 
 <div style="text-align: justify;">En un sistema basado en microservicios, para elegir un tipo de comunicación predominante, es importante elegir uno que sea escalable, confiable y fácil de implementar. Algunos de los tipos de comunicación más comunes utilizados en estos sistemas basados en microservicios son: REST API, Mensajería asíncrona, RPC.
-
+<p> </p>
 Personalmente yo utilizaría REST API, estas utilizan el protocolo HTTP para realizar solicitudes y recibir respuestas en formato JSON, lo cual las hace fáciles de implementar y utilizar, ya que la mayoría de las plataformas y lenguajes de programación tienen librerías de cliente HTTP disponibles. Además, el protocolo HTTP es ampliamente conocido y bien documentado, lo que facilita la integración con otras aplicaciones y sistemas.
 Justamente gracias al uso de este protocolo, las REST API llegan a ser tanto escalables como confiables, pues HTTP es ampliamente utilizado y probado. Por otro lado, las REST API son flexibles y permiten la creación de una amplia variedad de servicios y recursos. Podemos decir que las REST API son ideales en situaciones donde se necesita una comunicación a través de la red entre servicios o aplicaciones.
 
@@ -39,3 +39,23 @@ Luego se procede a configurar la replicación en cada nodo del sistema utilizand
 Tras esto, es necesario probar y monitorear la replicación para asegurarse de que funciona correctamente y que los datos se replican correctamente entre los nodos.
 
 </div>
+
+## Pregunta 3
+
+Primero creamos los directorios necesarios para la pregunta
+
+`dagmar@LAPTOP-M3SQF64H:~$ mkdir PC4`
+
+`dagmar@LAPTOP-M3SQF64H:~$ cd PC4`
+
+`dagmar@LAPTOP-M3SQF64H:~/PC4$ mkdir Pregunta3`
+
+`dagmar@LAPTOP-M3SQF64H:~/PC4$ cd Pregunta3`
+
+`dagmar@LAPTOP-M3SQF64H:~/PC4/Pregunta3$ mkdir microservices-demo`
+
+Ahora procedemos a descargar el ejemplo proporcionado por https://github.com/ewolff/microservice en el directorio ~/PC4/Pregunta3, ejecutando el comando `git clone` que descargará el ejemplo en nuestro sistema, creando un nuevo directorio llamado *service* donde estarán todos los archivos del ejemplo.
+
+`dagmar@LAPTOP-M3SQF64H:~/PC4/Pregunta3$ git clone https://github.com/ewolff/microservice.git`
+
+
