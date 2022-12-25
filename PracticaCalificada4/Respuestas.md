@@ -42,7 +42,7 @@ Tras esto, es necesario probar y monitorear la replicación para asegurarse de q
 
 ## Pregunta 3
 
-Primero creamos los directorios necesarios para la pregunta
+Primero crearemos los directorios necesarios para la pregunta
 
 `dagmar@LAPTOP-M3SQF64H:~$ mkdir PC4`
 
@@ -52,7 +52,7 @@ Primero creamos los directorios necesarios para la pregunta
 
 `dagmar@LAPTOP-M3SQF64H:~/PC4$ cd Pregunta3`
 
-Ahora procedemos a descargar el ejemplo proporcionado por https://github.com/ewolff/microservice en el directorio ~/PC4/Pregunta3, ejecutando el comando `git clone` que descargará el ejemplo en nuestro sistema, creando un nuevo directorio llamado *service* donde estarán todos los archivos del ejemplo.
+Ahora, procedemos a descargar el ejemplo proporcionado por https://github.com/ewolff/microservice en el directorio ~/PC4/Pregunta3, ejecutando el comando `git clone` que descargará el ejemplo en nuestro sistema, creando un nuevo directorio llamado *microservice* donde estarán todos los archivos del ejemplo.
 
 `git clone https://github.com/ewolff/microservice.git`
 
@@ -60,13 +60,13 @@ Ahora procedemos a descargar el ejemplo proporcionado por https://github.com/ewo
 
 [![1.jpg](https://i.postimg.cc/dtWfszdW/1.jpg)](https://postimg.cc/QHTmSYf5)
 
-Ahora instalaremos maven utilizando el comando `wget` para descargar el archivo ZIP de Maven en nuestro sistema:
+A continuación, instalaremos maven utilizando el comando `wget` para descargar el archivo ZIP de Maven en nuestro sistema:
 
 `wget https://downloads.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.zip`
 
 [![2.jpg](https://i.postimg.cc/TwWYRVpw/2.jpg)](https://postimg.cc/Kkxyfg7S)
 
-Este comando descarga el archivo zip en nuestro directorio actual, ahora tendríamos que descomprimir el archivo con el comando
+Este comando descarga el archivo zip en nuestro directorio actual, ahora tendríamos que descomprimir el archivo con el siguiente comando
 
 `sudo unzip apache-maven-3.8.6-bin.zip -d /opt`
 
@@ -74,7 +74,7 @@ el cual descomprimirá y creará un nuevo directorio llamado apache-maven-3.8.6 
 
 [![3.jpg](https://i.postimg.cc/9M11Q7S6/3.jpg)](https://postimg.cc/0MM7tb9n)
 
-Ahora tenemos que agregar la ruta del binario de Maven a la variable de entorno PATH, para esto utilizamos el comando `export`, así podremos ejecutar el comando "mvn" desde cualquier directorio en tu sistema sin tener que especificar la ruta completa de Maven, posterior a ello verificaremos que Maven esté instalado correctamente ejecutando el comando mvn -v. Esto debería mostrar la información de la versión de Maven instalada y la ruta de instalación
+Ahora tenemos que agregar la ruta del binario de Maven a la variable de entorno PATH, para esto utilizamos el comando `export`, así podremos ejecutar el comando "mvn" desde cualquier directorio en nuestro sistema sin tener que especificar la ruta completa de Maven, posterior a ello verificaremos que Maven esté instalado correctamente ejecutando el comando `mvn -v`. Esto debería mostrar la información de la versión de Maven instalada y la ruta de instalación
 
 `export PATH=/opt/apache-maven-3.8.6/bin:$PATH`
 
@@ -82,8 +82,13 @@ Ahora tenemos que agregar la ruta del binario de Maven a la variable de entorno 
 
 [![4.jpg](https://i.postimg.cc/5yYvWQMq/4.jpg)](https://postimg.cc/5QJjw0y6)
 
-Ahora compilaremos el proyecto: En el subdirectorio "microservices-demo", ejecutaremos el comando `mvn package`, esto construirá el proyecto completo utilizando Maven, que descargará las dependencias necesarias y compilará el código fuente en un archivo JAR ejecutable.
+Ahora compilaremos el proyecto al ejecutar el comando `mvn package` en el subdirectorio "microservices-demo", esto construirá el proyecto completo utilizando Maven, que descargará las dependencias necesarias y compilará el código fuente en un archivo JAR ejecutable.
 
+[![5.jpg](https://i.postimg.cc/5yYvWQMq/4.jpg)](https://postimg.cc/5QJjw0y6)
+
+Para crear un servidor de integración continua para el proyecto, debemos descargar el proyecto de ejemplo de entrega continua con el comando `git clone https://github.com/ewolff/user-registration-V2.git ` en un subdirectorio específico para tener una presentación más clara.
+
+Una vez que la descarga se haya completado, accederemos al subdirectorio "ci-setup" del proyecto con el comando `cd user-registration-V2/ci-setup`. Este es el subdirectorio que contiene la configuración para el servidor de integración continua (Jenkins) con análisis de código estático (Sonarqube) y Artifactory para el manejo de artefactos binarios. A partir de aquí nos guiaremos por el README.md que se encuentra en el subdirectorio en el que estamos.
 
 
 
