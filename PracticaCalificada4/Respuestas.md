@@ -1,7 +1,7 @@
-# PRÁCTICA CALIFICADA 4
+# **PRÁCTICA CALIFICADA 4**
 ## **Pregunta 1**
 
-### Se incorporará una nueva característica del producto en el entorno SOA que se muestra en la figura
+### **Se incorporará una nueva característica del producto en el entorno SOA que se muestra en la figura**
 
 ### **Responde a las siguientes preguntas:**
 
@@ -13,20 +13,22 @@ En el caso práctico, necesitamos incorporar un servicio para la creación y eje
 
 
 
-**El servicio de evaluación de campañas necesita manejar una gran cantidad de datos.**
+<br>
 
- - **¿Sería mejor utilizar la replicación de datos, la integración a nivel de interfaz de usuario o las llamadas de servicio para acceder a grandes cantidades de datos?**
+### **El servicio de evaluación de campañas necesita manejar una gran cantidad de datos.**
+
+ ### **¿Sería mejor utilizar la replicación de datos, la integración a nivel de interfaz de usuario o las llamadas de servicio para acceder a grandes cantidades de datos?**
 
  
-- **¿Cuál de estas opciones de integración suele ofrecer SOA?** 
+### **¿Cuál de estas opciones de integración suele ofrecer SOA?** 
 
 Cada una de estas opciones para acceder a grandes cantidades de datos en nuestro sistema, en general, brindan sus propias ventajas y desventajas individualmente y la mejor opción dependerá de las necesidades y requisitos específicos del sistema. A continuación, se describen algunos de los principales aspectos a tener en cuenta:
 
-**Replicación de datos:** consiste en el proceso de copiar los datos de un sistema a otro para su uso y análisis. Esta opción es adecuada cuando se necesita acceder a grandes cantidades de datos de forma rápida y segura, y cuando es importante tener una copia de seguridad de los datos. Sin embargo, puede llegar a ser bastante costosa al requerir una gran cantidad de ancho de banda y almacenamiento.
+>**Replicación de datos:** consiste en el proceso de copiar los datos de un sistema a otro para su uso y análisis. Esta opción es adecuada cuando se necesita acceder a grandes cantidades de datos de forma rápida y segura, y cuando es importante tener una copia de seguridad de los datos. Sin embargo, puede llegar a ser bastante costosa al requerir una gran cantidad de ancho de banda y almacenamiento.
 
-**Integración a nivel de interfaz de usuario:** esta implica la conexión directa de un sistema con otro a través de una interfaz gráfica de usuario (GUI). Esta opción es adecuada cuando se necesita una integración rápida y sencilla, y cuando los sistemas son compatibles con una GUI común. Sin embargo, esta integración puede ser menos flexible y escalable que otras opciones.
+>**Integración a nivel de interfaz de usuario:** esta implica la conexión directa de un sistema con otro a través de una interfaz gráfica de usuario (GUI). Esta opción es adecuada cuando se necesita una integración rápida y sencilla, y cuando los sistemas son compatibles con una GUI común. Sin embargo, esta integración puede ser menos flexible y escalable que otras opciones.
 
-**Llamadas de servicio:** son invocaciones de un servicio web que permiten a los sistemas compartir datos y funcionalidades. Esta opción es adecuada cuando se necesita una integración más flexible y escalable, y cuando los sistemas se basan en estándares web comunes. La desventaja es que pueden ser más complicadas de configurar y mantener que otras opciones, pero ofrecen una mayor flexibilidad y escalabilidad.
+>**Llamadas de servicio:** son invocaciones de un servicio web que permiten a los sistemas compartir datos y funcionalidades. Esta opción es adecuada cuando se necesita una integración más flexible y escalable, y cuando los sistemas se basan en estándares web comunes. La desventaja es que pueden ser más complicadas de configurar y mantener que otras opciones, pero ofrecen una mayor flexibilidad y escalabilidad.
 
 Ahora, necesitamos escoger uno que sea congruente al enfoque SOA de nuestro contexto. Recordemos que SOA se basa en la creación y uso de servicios web para integrar sistemas y aplicaciones, caracterizado por la independencia de plataforma, la reutilización de servicios y la composición de servicios en aplicaciones más grandes.
 
@@ -34,23 +36,25 @@ Ahora, necesitamos escoger uno que sea congruente al enfoque SOA de nuestro cont
 
 Entonces, finalmente podemos decir que las llamadas de servicio es la mejor opción para acceder a grandes cantidades de datos para nuestro caso y que son la opción de integración más utilizada comúnmente en el contexto de una arquitectura orientada a servicios o SOA. 
  
+<br>
 
+### **¿Debe el servicio integrarse al portal existente o tener su propia interfaz de usuario?**
 
-- **¿Debe el servicio integrarse al portal existente o tener su propia interfaz de usuario?**
+ Esta decisión depende de las necesidades y requisitos del sistema. Algunas de las consideraciones a tener en cuenta podrian ser: 
 
-> Esta decisión depende de las necesidades y requisitos del sistema. Algunas de las consideraciones a tener en cuenta podrian ser: 
+> Cantidad de usuarios: Si el servicio va a ser utilizado por un grupo amplio de usuarios, puede ser conveniente tener una interfaz de usuario dedicada para facilitar el acceso y la navegación. En cambio, si el servicio es para uso interno o para un grupo reducido de usuarios, puede ser más adecuado integrarlo al portal existente.
 
->> Cantidad de usuarios: Si el servicio va a ser utilizado por un grupo amplio de usuarios, puede ser conveniente tener una interfaz de usuario dedicada para facilitar el acceso y la navegación. En cambio, si el servicio es para uso interno o para un grupo reducido de usuarios, puede ser más adecuado integrarlo al portal existente.
+> Funcionalidades: Si el servicio ofrece funcionalidades complejas o múltiples pasos, puede ser conveniente tener una interfaz de usuario dedicada solo para facilitar la utilización del servicio. En cambio, si el servicio ofrece una funcionalidad sencilla o puede integrarse fácilmente en el flujo de trabajo del portal existente, puede ser más adecuado integrarlo a este portal.
 
->> Funcionalidades: Si el servicio ofrece funcionalidades complejas o múltiples pasos, puede ser conveniente tener una interfaz de usuario dedicada solo para facilitar la utilización del servicio. En cambio, si el servicio ofrece una funcionalidad sencilla o puede integrarse fácilmente en el flujo de trabajo del portal existente, puede ser más adecuado integrarlo a este portal.
+>Integración: Si el servicio se integra fácilmente al portal existente y se pueden mantener en sincronía las actualizaciones y cambios, puede ser conveniente integrarlo al portal existente. En cambio, si el servicio requiere una integración más compleja o se prevé que haya cambios frecuentes en el servicio, puede ser más adecuado tener una interfaz de usuario dedicada.
 
-Integración: Si el servicio se integra fácilmente al portal existente y se pueden mantener en sincronía las actualizaciones y cambios, puede ser conveniente integrarlo al portal existente. En cambio, si el servicio requiere una integración más compleja o se prevé que haya cambios frecuentes en el servicio, puede ser más adecuado tener una interfaz de usuario dedicada.
-
-Costos y recursos: Si el servicio requiere una gran cantidad de recursos o es costoso desarrollar y mantener una interfaz de usuario dedicada, puede ser más conveniente integrarlo al portal existente. En cambio, si el servicio es independiente y se puede desarrollar y mantener de forma sencilla, puede ser más adecuado tener una interfaz de usuario dedicada.
+>Costos y recursos: Si el servicio requiere una gran cantidad de recursos o es costoso desarrollar y mantener una interfaz de usuario dedicada, puede ser más conveniente integrarlo al portal existente. En cambio, si el servicio es independiente y se puede desarrollar y mantener de forma sencilla, puede ser más adecuado tener una interfaz de usuario dedicada.
 
 En nuestro caso, para nuestros servicios, es necesario evaluar todo el sistema en sí y las necesidades que implican los requisitos de este. Considero que sería adecuado analizar cuán escalable será nuestro sistema y si se dispondrán de los recursos necesarios para llegar a alcanzar lo requerido. 
 
 Yo sugiriría una propia interfaz de usuario si es que se dispone de lo necesario, ya que puede traer más ventajas al incluir más funcionalidades.
+
+<br>
 
 ### **¿Cuáles son los argumentos a favor de cada opción?**
 
@@ -58,18 +62,20 @@ En la pregunta anterior se describieron algunos argumentos a favor de cada opci�
 
 - Integración al portal existente:
 
-Facilita el acceso y la navegación para los usuarios, ya que no tienen que salir del portal para acceder al servicio Permite aprovechar la funcionalidad y diseño del portal existente, reduciendo el tiempo y costo de desarrollo. Facilita la integración con otras funcionalidades del portal y el flujo de trabajo existente. Puede ser más eficiente en términos de recursos y costos si el servicio es sencillo y no requiere una interfaz de usuario dedicada.
+    >Facilita el acceso y la navegación para los usuarios, ya que no tienen que salir del portal para acceder al servicio Permite aprovechar la funcionalidad y diseño del portal existente, reduciendo el tiempo y costo de desarrollo. Facilita la integración con otras funcionalidades del portal y el flujo de trabajo existente. Puede ser más eficiente en términos de recursos y costos si el servicio es sencillo y no requiere una interfaz de usuario dedicada.
 
-Interfaz de usuario dedicada:
+- Interfaz de usuario dedicada:
 
-Ofrece una experiencia de usuario más centrada y personalizada para el servicio.
-Permite diseñar la interfaz de usuario de acuerdo a las necesidades específicas del servicio.
-Puede ser más adecuada para servicios complejos o que ofrecen múltiples funcionalidades.
-Ofrece mayor flexibilidad y escalabilidad para adaptarse a futuros cambios y actualizaciones.
+    >Ofrece una experiencia de usuario más centrada y personalizada para el servicio. Permite diseñar la interfaz de usuario de acuerdo a las necesidades específicas del servicio. Puede ser más adecuada para servicios complejos o que ofrecen múltiples funcionalidades. Ofrece mayor flexibilidad y escalabilidad para adaptarse a futuros cambios y actualizaciones.
 
+<br>
 
-- **¿Deberías implementar la nueva funcionalidad, el equipo de CRM?**
+### **¿Debería implementar la nueva funcionalidad, el equipo de CRM?**
 
+Eso depende, es cierto que es muy probable que sean la opción más adecuada para implementar la nueva funcionalidad, pero deberíamos considerar las habilidades, recursos y responsabilidades del equipo. 
+Recordemos que el enunciado indica que el CRM no tiene soporte para campañas de correo electrónico.
+Es importante tener en cuenta que la implementación de esta nueva funcionalidad puede ser un proyecto complejo que requiere la consideración de muchos factores, como el alcance, la arquitectura, la integración, el tiempo y los recursos. Es posible que sea necesario evaluar la viabilidad de la implementación antes de tomar una decisión. 
+Entonces, para tomar una decisión informada, es recomendable considerar todos los factores relevantes y me parecería ideal el considerar un equipo multidisciplinario o una colaboración entre equipos para implementarlo adecuadamente, pero centrandonos en la integración más que nada.
 
 
 ## Pregunta 2
