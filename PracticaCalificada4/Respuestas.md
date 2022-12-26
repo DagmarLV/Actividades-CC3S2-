@@ -3,6 +3,8 @@
 
 ### **Se incorporará una nueva característica del producto en el entorno SOA que se muestra en la figura**
 
+[![busa.jpg](https://i.postimg.cc/wxb877cS/busa.jpg)](https://postimg.cc/kD8hHMHc)
+
 ### **Responde a las siguientes preguntas:**
 
 ### **¿Se necesita la infraestructura SOA para integrar los dos nuevos servicios?**
