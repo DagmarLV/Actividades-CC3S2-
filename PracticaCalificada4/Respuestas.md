@@ -80,6 +80,7 @@ Recordemos que el enunciado indica que el CRM no tiene soporte para campañas de
 Es importante tener en cuenta que la implementación de esta nueva funcionalidad puede ser un proyecto complejo que requiere la consideración de muchos factores, como el alcance, la arquitectura, la integración, el tiempo y los recursos. Es posible que sea necesario evaluar la viabilidad de la implementación antes de tomar una decisión. 
 Entonces, para tomar una decisión informada, es recomendable considerar todos los factores relevantes y me parecería ideal el considerar un equipo multidisciplinario o una colaboración entre equipos para implementarlo adecuadamente, pero centrandonos en la integración más que nada.
 
+<br>
 
 ## Pregunta 2
  **En un sistema basado en microservicios puede haber diferentes tipos de comunicación; sin embargo, debe haber un tipo de comunicación predominante. ¿Cuál escogerías?¿Qué otros están permitidos además?¿En qué situaciones? ¿Utilizarías la replicación de datos en un sistema basado en microservicios?¿En qué áreas?¿Cómo lo implementarías?**
