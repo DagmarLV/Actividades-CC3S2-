@@ -1,11 +1,11 @@
 # PRÁCTICA CALIFICADA 4
-## Pregunta 1
+## **Pregunta 1**
 
-**Se incorporará una nueva característica del producto en el entorno SOA que se muestra en la figura**
+### Se incorporará una nueva característica del producto en el entorno SOA que se muestra en la figura
 
-**Responde a las siguientes preguntas:**
+### **Responde a las siguientes preguntas:**
 
-- **¿Se necesita la infraestructura SOA para integrar los dos nuevos servicios?**
+### **¿Se necesita la infraestructura SOA para integrar los dos nuevos servicios?**
 
 Consideremos que  SOA es un enfoque para la integración de sistemas basado en la creación de servicios web. Estos servicios se basan en estándares web como HTTP, XML y SOAP, y se pueden invocar por otros sistemas y aplicaciones para compartir datos y funcionalidades.
 
@@ -52,7 +52,7 @@ En nuestro caso, para nuestros servicios, es necesario evaluar todo el sistema e
 
 Yo sugiriría una propia interfaz de usuario si es que se dispone de lo necesario, ya que puede traer más ventajas al incluir más funcionalidades.
 
-    ¿Cuáles son los argumentos a favor de cada opción?
+### **¿Cuáles son los argumentos a favor de cada opción?**
 
 En la pregunta anterior se describieron algunos argumentos a favor de cada opción, pero a continuación resaltamos lo siguiente:
 
