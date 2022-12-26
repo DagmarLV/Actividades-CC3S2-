@@ -1,8 +1,79 @@
 # PRÁCTICA CALIFICADA 4
 ## Pregunta 1
 
+**Se incorporará una nueva característica del producto en el entorno SOA que se muestra en la figura**
+
+**Responde a las siguientes preguntas:**
+
+- **¿Se necesita la infraestructura SOA para integrar los dos nuevos servicios?**
+
+Consideremos que  SOA es un enfoque para la integración de sistemas basado en la creación de servicios web. Estos servicios se basan en estándares web como HTTP, XML y SOAP, y se pueden invocar por otros sistemas y aplicaciones para compartir datos y funcionalidades.
+
+En el caso práctico, necesitamos incorporar un servicio para la creación y ejecución de campañas y otro para evaluar los resultados de una campaña, considerando que esta característica del producto será incorporado en el entorno SOA, si es necesario una infraestructura SOA para permitir que estos dos servicios se integren en nuestro entorno existente y para conseguirlo, se deberán crear y publicar como servicios web y utilizar la infraestructura SOA para invocarlos y comunicarse con ellos, teniendo en cuenta aspectos como la seguridad, la escalabilidad y la disponibilidad para garantizar el correcto funcionamiento del sistema.
+
+
+
+**El servicio de evaluación de campañas necesita manejar una gran cantidad de datos.**
+
+ - **¿Sería mejor utilizar la replicación de datos, la integración a nivel de interfaz de usuario o las llamadas de servicio para acceder a grandes cantidades de datos?**
+
+ 
+- **¿Cuál de estas opciones de integración suele ofrecer SOA?** 
+
+Cada una de estas opciones para acceder a grandes cantidades de datos en nuestro sistema, en general, brindan sus propias ventajas y desventajas individualmente y la mejor opción dependerá de las necesidades y requisitos específicos del sistema. A continuación, se describen algunos de los principales aspectos a tener en cuenta:
+
+**Replicación de datos:** consiste en el proceso de copiar los datos de un sistema a otro para su uso y análisis. Esta opción es adecuada cuando se necesita acceder a grandes cantidades de datos de forma rápida y segura, y cuando es importante tener una copia de seguridad de los datos. Sin embargo, puede llegar a ser bastante costosa al requerir una gran cantidad de ancho de banda y almacenamiento.
+
+**Integración a nivel de interfaz de usuario:** esta implica la conexión directa de un sistema con otro a través de una interfaz gráfica de usuario (GUI). Esta opción es adecuada cuando se necesita una integración rápida y sencilla, y cuando los sistemas son compatibles con una GUI común. Sin embargo, esta integración puede ser menos flexible y escalable que otras opciones.
+
+**Llamadas de servicio:** son invocaciones de un servicio web que permiten a los sistemas compartir datos y funcionalidades. Esta opción es adecuada cuando se necesita una integración más flexible y escalable, y cuando los sistemas se basan en estándares web comunes. La desventaja es que pueden ser más complicadas de configurar y mantener que otras opciones, pero ofrecen una mayor flexibilidad y escalabilidad.
+
+Ahora, necesitamos escoger uno que sea congruente al enfoque SOA de nuestro contexto. Recordemos que SOA se basa en la creación y uso de servicios web para integrar sistemas y aplicaciones, caracterizado por la independencia de plataforma, la reutilización de servicios y la composición de servicios en aplicaciones más grandes.
+
+ La replicación de datos implica copiar y mantener una copia de seguridad de los datos en un segundo sistema, y no se basa en la creación y uso de servicios web. La integración a nivel de interfaz de usuario involucra la integración de las interfaces de usuario de dos sistemas para permitir la comunicación y el intercambio de datos, y tampoco se basa en la creación y uso de servicios web. Por lo tanto, ambas opciones no forman parte de SOA, porque no utilizan los principios y estándares que caracterizan a SOA.
+
+Entonces, finalmente podemos decir que las llamadas de servicio es la mejor opción para acceder a grandes cantidades de datos para nuestro caso y que son la opción de integración más utilizada comúnmente en el contexto de una arquitectura orientada a servicios o SOA. 
+ 
+
+
+- **¿Debe el servicio integrarse al portal existente o tener su propia interfaz de usuario?**
+
+> Esta decisión depende de las necesidades y requisitos del sistema. Algunas de las consideraciones a tener en cuenta podrian ser: 
+
+>> Cantidad de usuarios: Si el servicio va a ser utilizado por un grupo amplio de usuarios, puede ser conveniente tener una interfaz de usuario dedicada para facilitar el acceso y la navegación. En cambio, si el servicio es para uso interno o para un grupo reducido de usuarios, puede ser más adecuado integrarlo al portal existente.
+
+>> Funcionalidades: Si el servicio ofrece funcionalidades complejas o múltiples pasos, puede ser conveniente tener una interfaz de usuario dedicada solo para facilitar la utilización del servicio. En cambio, si el servicio ofrece una funcionalidad sencilla o puede integrarse fácilmente en el flujo de trabajo del portal existente, puede ser más adecuado integrarlo a este portal.
+
+Integración: Si el servicio se integra fácilmente al portal existente y se pueden mantener en sincronía las actualizaciones y cambios, puede ser conveniente integrarlo al portal existente. En cambio, si el servicio requiere una integración más compleja o se prevé que haya cambios frecuentes en el servicio, puede ser más adecuado tener una interfaz de usuario dedicada.
+
+Costos y recursos: Si el servicio requiere una gran cantidad de recursos o es costoso desarrollar y mantener una interfaz de usuario dedicada, puede ser más conveniente integrarlo al portal existente. En cambio, si el servicio es independiente y se puede desarrollar y mantener de forma sencilla, puede ser más adecuado tener una interfaz de usuario dedicada.
+
+En nuestro caso, para nuestros servicios, es necesario evaluar todo el sistema en sí y las necesidades que implican los requisitos de este. Considero que sería adecuado analizar cuán escalable será nuestro sistema y si se dispondrán de los recursos necesarios para llegar a alcanzar lo requerido. 
+
+Yo sugiriría una propia interfaz de usuario si es que se dispone de lo necesario, ya que puede traer más ventajas al incluir más funcionalidades.
+
+- **¿Cuáles son los argumentos a favor de cada opción?**
+
+En la pregunta anterior se describieron algunos argumentos a favor de cada opción, pero a continuación resaltamos lo siguiente:
+
+> Integración al portal existente:
+
+Facilita el acceso y la navegación para los usuarios, ya que no tienen que salir del portal para acceder al servicio Permite aprovechar la funcionalidad y diseño del portal existente, reduciendo el tiempo y costo de desarrollo. Facilita la integración con otras funcionalidades del portal y el flujo de trabajo existente. Puede ser más eficiente en términos de recursos y costos si el servicio es sencillo y no requiere una interfaz de usuario dedicada.
+
+Interfaz de usuario dedicada:
+
+Ofrece una experiencia de usuario más centrada y personalizada para el servicio.
+Permite diseñar la interfaz de usuario de acuerdo a las necesidades específicas del servicio.
+Puede ser más adecuada para servicios complejos o que ofrecen múltiples funcionalidades.
+Ofrece mayor flexibilidad y escalabilidad para adaptarse a futuros cambios y actualizaciones.
+
+
+- **¿Deberías implementar la nueva funcionalidad, el equipo de CRM?**
+
+
+
 ## Pregunta 2
-<div style="text-align: justify; font-weight: bold; "> En un sistema basado en microservicios puede haber diferentes tipos de comunicación; sin embargo, debe haber un tipo de comunicación predominante. ¿Cuál escogerías?¿Qué otros están permitidos además?¿En qué situaciones? ¿Utilizarías la replicación de datos en un sistema basado en microservicios?¿En qué áreas?¿Cómo lo implementarías?</div>
+ **En un sistema basado en microservicios puede haber diferentes tipos de comunicación; sin embargo, debe haber un tipo de comunicación predominante. ¿Cuál escogerías?¿Qué otros están permitidos además?¿En qué situaciones? ¿Utilizarías la replicación de datos en un sistema basado en microservicios?¿En qué áreas?¿Cómo lo implementarías?**
 <p></p>
 
 <div style="text-align: justify;">En un sistema basado en microservicios, para elegir un tipo de comunicación predominante, es importante elegir uno que sea escalable, confiable y fácil de implementar. Algunos de los tipos de comunicación más comunes utilizados en estos sistemas basados en microservicios son: REST API, Mensajería asíncrona, RPC.
