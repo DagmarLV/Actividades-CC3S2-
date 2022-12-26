@@ -52,11 +52,11 @@ En nuestro caso, para nuestros servicios, es necesario evaluar todo el sistema e
 
 Yo sugiriría una propia interfaz de usuario si es que se dispone de lo necesario, ya que puede traer más ventajas al incluir más funcionalidades.
 
-- **¿Cuáles son los argumentos a favor de cada opción?**
+    ¿Cuáles son los argumentos a favor de cada opción?
 
 En la pregunta anterior se describieron algunos argumentos a favor de cada opción, pero a continuación resaltamos lo siguiente:
 
-> Integración al portal existente:
+- Integración al portal existente:
 
 Facilita el acceso y la navegación para los usuarios, ya que no tienen que salir del portal para acceder al servicio Permite aprovechar la funcionalidad y diseño del portal existente, reduciendo el tiempo y costo de desarrollo. Facilita la integración con otras funcionalidades del portal y el flujo de trabajo existente. Puede ser más eficiente en términos de recursos y costos si el servicio es sencillo y no requiere una interfaz de usuario dedicada.
 
