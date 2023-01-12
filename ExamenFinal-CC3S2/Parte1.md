@@ -8,6 +8,7 @@ A las instancias de microservicios normalmente se les asignan direcciones IP din
 se inician, por ejemplo, cuando se ejecutan en contenedores. Esto dificulta que un cliente realice
 una solicitud a un microservicio que, por ejemplo, expone una API REST a través de HTTP.
 Considera el siguiente diagrama:**
+
 [![image.png](https://i.postimg.cc/wT3yCqPT/image.png)](https://postimg.cc/WhL1rvTQ)
 
 >>
@@ -50,6 +51,7 @@ comienza a escribir mensajes de error en sus archivos logs?**
 
 >>● **Si los usuarios finales comienzan a informar problemas,¿cómo puedo encontrar mensajes logs relacionados? es decir,¿cómo puedo identificar qué instancia de
 microservicio es la causa raíz del problema? El siguiente diagrama ilustra el problema:**
+
 [![image.png](https://i.postimg.cc/NjZbSPjL/image.png)](https://postimg.cc/18cpNB6Z)
 
 6. **(3 puntos) Debe ser posible rastrear solicitudes y mensajes que fluyen entre microservicios
@@ -70,4 +72,5 @@ tiempo de respuesta inaceptablemente largo,¿cómo podemos identificar qué
 microservicio en una cadena de llamadas está causando la demora?**
 
 >>**El siguiente diagrama representa esto:**
+
 [![image.png](https://i.postimg.cc/sfSB46tw/image.png)](https://postimg.cc/qgJMkLB3)
