@@ -27,8 +27,8 @@ restantes del acceso externo. Los microservicios expuestos deben estar protegido
 solicitudes de clientes malintencionados.**
 
 >>Podríamos usar un gateway de API o un Edge Server, pero por motivos de rendimiento, flexibilidad, escalabilidad y otros, recomiendo la segunda opción, que es un componente que se sitúa en la frontera del sistema de microservicios y maneja todas las solicitudes entrantes, este se encarga de filtrar y enrutar las solicitudes a los diferentes microservicios y podemos emplearlo de acuerdo a nuestros requerimientos, expresados en el enunciado, que incluyen:
-<br>
-Asegurarnos que solo los servicios internos que deben estar disponibles para las solicitudes externas sean expuestos, y al mismo tiempo proteger estos servicios expuestos de solicitudes maliciosas mediante el uso de protocolos de seguridad estándar que nos brinden una forma de autenticar y autorizar a los clientes que acceden a los microservicios.
+
+>>Asegurarnos que solo los servicios internos que deben estar disponibles para las solicitudes externas sean expuestos, y al mismo tiempo proteger estos servicios expuestos de solicitudes maliciosas mediante el uso de protocolos de seguridad estándar que nos brinden una forma de autenticar y autorizar a los clientes que acceden a los microservicios.
 En otras palabras, solo se permiten solicitudes a los microservicios configurados para recibir solicitudes externas y se garantiza que los clientes que acceden a estos servicios son confiables mediante la implementación de medidas de seguridad adecuadas
 También, sería formidable contar con una manera de monitorear el rendimiento del Edge Server para detectar problemas y tomar medidas correctivas.
 
