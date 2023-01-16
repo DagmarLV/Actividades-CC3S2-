@@ -71,12 +71,12 @@ CMD ["python", "app.py"]
 >>c. Construye la imagen.
 >>>Para construir la imagen utilizamos el comando `sudo docker build -t hola_py .`
 
->>><img src=https://i.postimg.cc/ZKsCNQjV/image.png>
+>>>[![image.png](https://i.postimg.cc/bY3QnRCm/image.png)](https://postimg.cc/py5hbKtj)
 
 >>d. Ejecuta el contenedor que publica el puerto.
 >>>Ejecutaremos el contenedor mediante el comando `sudo docker run -d -p 8080:8080 hola_py`, así expondremos el puerto 8080 y utilizamos el tag previamente definido en la construcción de la imágen.
 
->>><img src=https://i.postimg.cc/ZnyDL2pp/image.png)](https://postimg.cc/1VsHmWW3)
+>>><img src=https://i.postimg.cc/ZnyDL2pp/image.png)](https://postimg.cc/1VsHmWW3)>
 
 >>e. Verifica que se esté ejecutando correctamente utilizando el navegador (o curl).
 >>>Mediante el curl, obtenemos lo siguiente:
@@ -102,9 +102,9 @@ RUN jenkins-plugin-cli --plugins docker-plugin github-branch-source:1.8
 >>b. Crea la imagen master y ejecuta la instancia de Jenkins.
 >>>Creamos la imagen mediante el comando `sudo docker build -t jenkins/master .` y ejecutamos su instancia mediante `sudo docker run -p 8080:8080 jenkins/master`
 
->>><img src=https://i.postimg.cc/bvrJw914/image.png>
+>>>[![image.png](https://i.postimg.cc/hjM79SrX/image.png)](https://postimg.cc/hzzjnRNn)
 
->>><img src=https://i.postimg.cc/hjpfr4VQ/image.png>
+>>>[![image.png](https://i.postimg.cc/HWZynknK/image.png)](https://postimg.cc/9z9MNVGt)
 
 >>c. Crea el Dockerfile del agente (adecuado para el aprovisionamiento dinámico del agente), que instala el intérprete de Ruby.
 >>>Con el siguiente Dockerfile que instalará se podrá instalar el intérprete de Ruby:
