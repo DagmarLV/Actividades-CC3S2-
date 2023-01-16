@@ -169,12 +169,8 @@ Deployment y Services. Definiremos ambos en un archivo, hazelcast.yaml
 
 [![image.png](https://i.postimg.cc/qvtHTrPC/image.png)](https://postimg.cc/mPG5Yv2b)
 
-Ahora definiremos la configuración de Hazelcast mediante 
 
-ERROR 
-
-Tras este puto errore de mieradkjjfasf 
-Decidí probar kind en lugar de minikube para levantar el cluster de kubernetes
+Tras obtener errores, decidí probar kind en lugar de minikube para levantar el cluster de kubernetes
 [![image.png](https://i.postimg.cc/XJrvzwFZ/image.png)](https://postimg.cc/8JVDFfZD)
 
 Así al aplicar, `sudo kubectl apply -f hazelcast.yaml`
