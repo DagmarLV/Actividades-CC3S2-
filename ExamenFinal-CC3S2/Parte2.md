@@ -71,12 +71,12 @@ CMD ["python", "app.py"]
 >>c. Construye la imagen.
 >>>Para construir la imagen utilizamos el comando `sudo docker build -t hola_py .`
 
->>>[![image.png](https://i.postimg.cc/ZKsCNQjV/image.png)](https://postimg.cc/JGJrVPfk)
+>>><img src=https://i.postimg.cc/ZKsCNQjV/image.png>
 
 >>d. Ejecuta el contenedor que publica el puerto.
 >>>Ejecutaremos el contenedor mediante el comando `sudo docker run -d -p 8080:8080 hola_py`, así expondremos el puerto 8080 y utilizamos el tag previamente definido en la construcción de la imágen.
 
->>>[![image.png](https://i.postimg.cc/ZnyDL2pp/image.png)](https://postimg.cc/1VsHmWW3)
+>>><img src=https://i.postimg.cc/ZnyDL2pp/image.png)](https://postimg.cc/1VsHmWW3)
 
 >>e. Verifica que se esté ejecutando correctamente utilizando el navegador (o curl).
 >>>Mediante el curl, obtenemos lo siguiente:
@@ -102,9 +102,9 @@ RUN jenkins-plugin-cli --plugins docker-plugin github-branch-source:1.8
 >>b. Crea la imagen master y ejecuta la instancia de Jenkins.
 >>>Creamos la imagen mediante el comando `sudo docker build -t jenkins/master .` y ejecutamos su instancia mediante `sudo docker run -p 8080:8080 jenkins/master`
 
->>>[![image.png](https://i.postimg.cc/bvrJw914/image.png)](https://postimg.cc/mcxRdMXS)
+>>><img src=https://i.postimg.cc/bvrJw914/image.png>
 
->>>[![image.png](https://i.postimg.cc/hjpfr4VQ/image.png)](https://postimg.cc/vgxY8sqG)
+>>><img src=https://i.postimg.cc/hjpfr4VQ/image.png>
 
 >>c. Crea el Dockerfile del agente (adecuado para el aprovisionamiento dinámico del agente), que instala el intérprete de Ruby.
 >>>Con el siguiente Dockerfile que instalará se podrá instalar el intérprete de Ruby:
@@ -285,6 +285,7 @@ spec:
 [![image.png](https://i.postimg.cc/R0wGpg7K/image.png)](https://postimg.cc/xkTKcyF1)
 
 >>>Por lo visto, la aplicación funciona correctamente, esto también puede ser verificado accediendo a la dirección en nuestro navegador.
+
 >>>[![image.png](https://i.postimg.cc/kGGQCsbj/image.png)](https://postimg.cc/PvGpzmKZ)
 
 8. **(1 punto) Implementa una nueva función, Nos vemos!, e implementa mediante una actualización continua:**
